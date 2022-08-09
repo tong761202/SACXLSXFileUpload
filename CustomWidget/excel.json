@@ -55,7 +55,7 @@
       "type": "string",
       "description": "footer",
       "default": ""
-    }
+    },
     "resultData": {
       "type": "string",
       "description": "result data",
