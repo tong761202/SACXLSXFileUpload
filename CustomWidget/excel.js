@@ -357,7 +357,7 @@
                                 this.settings = {};
                                 this.settings.result = result;
                                 that._export_settings.resultData = result;
-                                this.setresultData(result);
+                                this.resultData = result;
                                 console.log(that._export_settings.resultData);
                                 this_.runNext();
                                 fU.setValue("");
