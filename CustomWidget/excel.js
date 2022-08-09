@@ -358,7 +358,7 @@
                             if (correctsheet) {
                                 that._firePropertiesChanged();
                                 this.settings = {};
-                                this.settings.result = result;
+                                this.settings.result = "";
                                 this.resultData2 = result;
                                 
                                 console.log(this.resultData);
