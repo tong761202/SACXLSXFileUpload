@@ -358,6 +358,7 @@
                                 this.settings = {};
                                 this.settings.result = "";
                                 this.resultDataSet = JSON.stringify(result);
+                                console.log(this.resultDataSet);
                                 this_.runNext();
                                 fU.setValue("");
                                 
