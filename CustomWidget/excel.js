@@ -33,6 +33,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
+            this.resultData = {};
 
             this.addEventListener("click", event => {
                 console.log('click');
