@@ -391,8 +391,7 @@
                                         oModel1.setData({
                                             fname: file.name,
                                         });
-                                        console.log(result_final);
-/*
+                                        console.log(oModel1);
                                         var oHeaders =  {
                                             "Authorization": "Basic XXXXXXXX",
                                             "Content-Type": "application/x-www-form-urlencoded"
@@ -401,6 +400,8 @@
                                         var oModel = new JSONModel();
 
                                         console.log(result_final);
+                                        
+/*
                                         oModel.loadData("processData.xsjs", JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
 
                                         oModel.attachRequestCompleted(function() {
