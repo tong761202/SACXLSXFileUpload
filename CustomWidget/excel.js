@@ -33,7 +33,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
-            this.resultData = [];
+            this.resultData2 = [];
 
             this.addEventListener("click", event => {
                 //console.log('click');
@@ -204,10 +204,10 @@
         }   
 
         get resultData() {
-            return this.resultData;
+            return this.resultData2;
         }
         set resultData(value) {
-            this.resultData = value;
+            this.resultData2 = value;
         }         
         
         static get observedAttributes() {
