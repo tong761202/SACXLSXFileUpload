@@ -359,9 +359,9 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = result;
-                                that.resultData2 = result;
+                                this.resultData2 = result;
                                 
-                                console.log(that.resultData);
+                                console.log(this.resultData);
                                 this_.runNext();
                                 fU.setValue("");
                                 
