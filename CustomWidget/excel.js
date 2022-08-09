@@ -424,6 +424,10 @@
 
                                         });
 */
+                                        
+                                        that._firePropertiesChanged();
+                                        this.settings = {};
+                                        this.settings.result = "";
                                         this_.runNext();
                                         fU.setValue("");
                                     }
