@@ -47,6 +47,10 @@
               <td><label for="Footer">Footer</label></td>
               <td><input id="footer" name="footer" type="text"></td>
             </tr>
+            <tr>
+              <td><label for="resultData2">resultData2</label></td>
+              <td><input id="resultData2" name="resultData2" type="text"></td>
+            </tr>
           </table>
         </fieldset>
         <button type="submit" hidden>Submit</button>
@@ -128,6 +132,13 @@
         set footer(value) {
             this.setValue("footer", value);
         }
+        
+        get resultData2() {
+            return this.getValue("resultData2");
+        }
+        set resultData2(value) {
+            this.setValue("resultData2", value);
+        }        
 
         getValue(id) {
             return this._shadowRoot.getElementById(id).value;
@@ -142,7 +153,8 @@
                 "subtitle",
                 "icon",
                 "unit",
-                "footer"
+                "footer",
+                "resultData2"
             ];
         }
 
