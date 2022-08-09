@@ -149,7 +149,7 @@
       "body": "this.footer = value;"
     },
     "getResultData": {
-      "returnType": "string[]",
+      "returnType": "string",
       "description": "Get resultData",
       "parameters": [],
       "body": "return this.resultData;"
