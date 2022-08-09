@@ -392,7 +392,7 @@
                                             fname: file.name,
                                         });
                                         console.log(oModel);
-
+/*
                                         var oHeaders =  {
                                             "Authorization": "Basic XXXXXXXX",
                                             "Content-Type": "application/x-www-form-urlencoded"
@@ -422,7 +422,7 @@
                                             this_.runNext();
 
                                         });
-
+*/
 
                                         fU.setValue("");
                                     }
