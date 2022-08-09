@@ -27,8 +27,6 @@
             
             //_shadowRoot.querySelector("#oView").id = "oView";
             
-            
-
             this._export_settings = {};
             this._export_settings.title = "";
             this._export_settings.subtitle = "";
@@ -361,7 +359,7 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = "";
-                                that.resultData2 = result;
+                                that_.resultData2 = result;
                                 
                                 //console.log(that._export_settings.resultData);
                                 this_.runNext();
