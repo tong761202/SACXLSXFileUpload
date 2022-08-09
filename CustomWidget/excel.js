@@ -39,10 +39,6 @@
                 console.log('click');
 
             });
-            
-            this.addEventlistner("onStart", event => {
-                console.log(event.detail); 
-            });
 
             this._firstConnection = 0;            
         }
@@ -361,6 +357,7 @@
                                 this.settings = {};
                                 this.settings.result = result;
                                 that._export_settings.resultData = result;
+                                this.setresultData(result);
                                 console.log(that._export_settings.resultData);
                                 this_.runNext();
                                 fU.setValue("");
