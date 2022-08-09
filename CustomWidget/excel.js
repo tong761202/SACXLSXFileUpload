@@ -342,7 +342,7 @@
                                 }
                             });
                             
-                            console.log(result);
+                            //console.log(result);
 
                             if (correctsheet) {
                                 that._firePropertiesChanged();
@@ -350,6 +350,13 @@
                                 this.settings.result = "";
                                 this_.runNext();
                                 fU.setValue("");
+                                
+                                that.dispatchEvent(new CustomEvent("onStart", {
+                                                detail: {
+                                                    settings: this.settings
+                                                }
+                                            }));
+                                
                             } else {
                                 this_.runNext();
                                 console.log("Error: wrong Excel File template");
