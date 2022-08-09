@@ -355,7 +355,7 @@
                             if (correctsheet) {
                                 that._firePropertiesChanged();
                                 this.settings = {};
-                                this.settings.result = "";
+                                this.settings.result = JSON.stringify(result);
                                 that._export_settings.resultData = JSON.stringify(result);
                                 console.log(that._export_settings.resultData);
                                 this_.runNext();
