@@ -205,11 +205,11 @@
 
         get resultData2() {
             console.log("resultData Get called!!");
-            return resultData;
+            return this.resultData;
         }
         set resultData2(value) {
             console.log("resultData Set called!!");
-            resultData = value;
+            this.resultData = value;
         }         
         
         static get observedAttributes() {
@@ -359,9 +359,9 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = "";
-                                resultData = result;
+                                this.resultData = result;
                                 
-                                console.log(resultData);
+                                console.log(this.resultData);
                                 this_.runNext();
                                 fU.setValue("");
                                 
