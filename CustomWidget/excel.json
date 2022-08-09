@@ -150,9 +150,9 @@
     },
     "getResultData": {
       "returnType": "string[]",
-      "description": "Get ResultData",
+      "description": "Get resultData",
       "parameters": [],
-      "body": "return this.resultDataSet;"
+      "body": "return this.resultData;"
     }
   },
   "events": {
