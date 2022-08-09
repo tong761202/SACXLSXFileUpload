@@ -208,7 +208,7 @@
         }
         
         set resultData(value) {
-            this.resultData.push(value);   
+            //this.resultData.push(value);   
         }        
 
         static get observedAttributes() {
