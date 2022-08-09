@@ -424,7 +424,7 @@
 
                                         });
 */
-
+                                        this_.runNext();
                                         fU.setValue("");
                                     }
                                 } else {
