@@ -39,6 +39,10 @@
                 console.log('click');
 
             });
+            
+            this.addEventlistner("onStart", event => {
+                console.log(event.detail); 
+            });
 
             this._firstConnection = 0;            
         }
@@ -217,7 +221,6 @@
                 "icon",
                 "unit",
                 "footer",
-                "resultData",
                 "link"
             ];
         }
