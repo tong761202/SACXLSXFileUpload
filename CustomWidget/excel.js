@@ -204,10 +204,11 @@
         }   
 
         get resultData() {
-            console.log("resultData called!!");
+            console.log("resultData Get called!!");
             return this.resultData2;
         }
         set resultData(value) {
+            console.log("resultData Set called!!");
             this.resultData2 = value;
         }         
         
