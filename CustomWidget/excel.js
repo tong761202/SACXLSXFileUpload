@@ -361,8 +361,14 @@
 
                                 console.log(that._export_settings.resultData2);
                                 that.resultData2 = result;                               
-                                document.getElementById("resultData2").value = JSON.stringify(result);
-                                console.log(that._export_settings.resultData2);
+                                
+                                that.dispatchEvent(new CustomEvent("propertiesChanged", {
+                                    detail: {
+                                        properties: {
+                                            resultData2: resultData2
+                                        }
+                                    }
+                                }));                                
                                 
                                 this_.runNext();
                                 fU.setValue("");
