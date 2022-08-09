@@ -129,12 +129,19 @@
             this.setValue("footer", value);
         }
 
+        get resultData2() {
+            return this.getValue("resultData2");
+        }
+        set resultData2(value) {
+            this.setValue("resultData2", value);
+        }        
+        
         getValue(id) {
             return this._shadowRoot.getElementById(id).value;
         }
         setValue(id, value) {
             this._shadowRoot.getElementById(id).value = value;
-        }
+        }        
 
         static get observedAttributes() {
             return [
