@@ -203,6 +203,13 @@
             this._export_settings.footer = value;
         }   
 
+        get resultData() {
+            return this._export_settings.resultData;
+        }
+        set resultData(value) {
+            this._export_settings.resultData = value;
+        }         
+        
         static get observedAttributes() {
             return [
                 "title",
