@@ -328,14 +328,23 @@
                             workbook.SheetNames.forEach(function (sheetName) {
                                 if (sheetName === "Sheet1") {
                                     correctsheet = true;
+                                    /*
                                     var csv = XLSX.utils.sheet_to_csv(workbook.Sheets[sheetName]);
                                     if (csv.length) {
                                         result.push(csv);
                                     }
                                     result = result.join("[$@~!~@$]")
+                                    */
+                                    var json = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+                                    if (json.length) {
+                                        result.push(json);
+                                    }                                    
                                 }
                             });
+                            
+                            console.log(result);
 
+/*
                             if (correctsheet) {
                                 var lengthfield = result.split("[$@~!~@$]")[0].split("[#@~!~@#]").length;
                                 console.log("lengthfield: " + lengthfield);
@@ -401,7 +410,6 @@
 
                                         console.log(result_final);
                                         
-/*
                                         oModel.loadData("processData.xsjs", JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
 
                                         oModel.attachRequestCompleted(function() {
