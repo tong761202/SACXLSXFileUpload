@@ -203,11 +203,11 @@
             this._export_settings.footer = value;
         }
         
-        get ResultData() {
+        get resultData() {
             return this.resultDataSet;   
         }
         
-        set ResultData(value) {
+        set resultData(value) {
             this.resultDataSet.push(value);   
         }        
 
