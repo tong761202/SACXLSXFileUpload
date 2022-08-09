@@ -212,6 +212,7 @@
         set resultData2(value) {
             console.log("resultData Set called!!");
             console.log(value);
+            console.log("resultData Set called!!");
             this._export_settings.resultData = value;
         }         
         
