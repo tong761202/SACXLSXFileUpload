@@ -33,7 +33,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
-            this.resultDataSet = [];
+            this.resultDataSet = "";
 
             this.addEventListener("click", event => {
                 console.log('click');
@@ -204,7 +204,7 @@
         }
         
         get resultData() {
-            return this.resultDataSet.stringify();   
+            return this.resultDataSet;   
         }
         
         set resultData(value) {
@@ -357,7 +357,7 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = "";
-                                this.resultDataSet = result;
+                                this.resultDataSet = result.stringify();
                                 this_.runNext();
                                 fU.setValue("");
                                 
