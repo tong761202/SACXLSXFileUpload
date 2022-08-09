@@ -358,7 +358,7 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = "";
-                                that_.resultData2 = result;
+                                this.resultData2 = result;
                                 
                                 //console.log(that._export_settings.resultData);
                                 this_.runNext();
