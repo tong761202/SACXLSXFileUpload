@@ -201,6 +201,10 @@
         set footer(value) {
             this._export_settings.footer = value;
         }
+        
+        get resultData() {
+            return this.resultData;   
+        }
 
         static get observedAttributes() {
             return [
@@ -348,6 +352,7 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = "";
+                                this.resultData = result;
                                 this_.runNext();
                                 fU.setValue("");
                                 
