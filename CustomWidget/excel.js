@@ -35,7 +35,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
-            this._export_settings.resultData = [];
+            this._export_settings.resultData2 = [];
             
             this.addEventListener("click", event => {
                 //console.log('click');
@@ -207,11 +207,11 @@
 
         get resultData2() {
             console.log("resultData Get called!!");
-            return this._export_settings.resultData;
+            return this._export_settings.resultData2;
         }
         set resultData2(value) {
             console.log("resultData Set called!!");
-            this._export_settings.resultData = value;
+            this._export_settings.resultData2 = value;
         }         
         
         static get observedAttributes() {
