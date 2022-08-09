@@ -358,8 +358,8 @@
                                 this.settings.result = result;
                                 that._export_settings.resultData = result;
                                 this.resultData = result;
-                                console.log(this.resultData);
-                                console.log(that._export_settings.resultData);
+                                this_.resultData = result;
+
                                 this_.runNext();
                                 fU.setValue("");
                                 
