@@ -206,6 +206,10 @@
         get resultData() {
             return this.resultData;   
         }
+        
+        set resultData(value) {
+            this.resultData = value;   
+        }        
 
         static get observedAttributes() {
             return [
