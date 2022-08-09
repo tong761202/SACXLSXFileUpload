@@ -37,8 +37,6 @@
             this._export_settings.footer = "";
             this._export_settings.resultData = [];
             
-            resultData2 = resultData2.bind(this);
-
             this.addEventListener("click", event => {
                 //console.log('click');
 
@@ -212,8 +210,6 @@
             return this._export_settings.resultData;
         }
         set resultData2(value) {
-            console.log("resultData Set called!!");
-            console.log(value);
             console.log("resultData Set called!!");
             this._export_settings.resultData = value;
         }         
