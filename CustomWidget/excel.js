@@ -33,7 +33,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
-            this._export_settings.resultData = "";
+            this.resultData = "";
 
             this.addEventListener("click", event => {
                 console.log('click');
@@ -201,15 +201,7 @@
         }
         set footer(value) {
             this._export_settings.footer = value;
-        }
-        
-        get resultData() {
-            return this._export_settings.resultData;   
-        }
-        
-        set resultData(value) {
-            this._export_settings.resultData = value;   
-        }        
+        }   
 
         static get observedAttributes() {
             return [
@@ -357,7 +349,7 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = "";
-                                this._export_settings.resultData = JSON.stringify(result);
+                                this.resultData = JSON.stringify(result);
                                 //console.log(this._export_settings.resultDataSet);
                                 this_.runNext();
                                 fU.setValue("");
