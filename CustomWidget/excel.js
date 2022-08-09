@@ -6,7 +6,6 @@
     let div;
     let widgetName;
     var Ar = [];
-    var resultData = [];
 
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
@@ -34,6 +33,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
+            this._export_settings.resultData = [];
 
             this.addEventListener("click", event => {
                 //console.log('click');
@@ -205,11 +205,11 @@
 
         get resultData2() {
             console.log("resultData Get called!!");
-            return this.resultData;
+            return this._export_settings.resultData;
         }
         set resultData2(value) {
             console.log("resultData Set called!!");
-            this.resultData = value;
+            this._export_settings.resultData = value;
         }         
         
         static get observedAttributes() {
@@ -360,7 +360,7 @@
                                 this.settings.result = "";
                                 this.resultData2 = result;
                                 
-                                console.log(this.resultData);
+                                console.log(this._export_settings.resultData);
                                 this_.runNext();
                                 fU.setValue("");
                                 
