@@ -359,7 +359,7 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = "";
-                                this.resultData = result;
+                                this.resultData2 = result;
                                 
                                 console.log(this.resultData);
                                 this_.runNext();
