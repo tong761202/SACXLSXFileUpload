@@ -345,105 +345,11 @@
                             console.log(result);
 
                             if (correctsheet) {
-/*
-                                var lengthfield = result.split("[$@~!~@$]")[0].split("[#@~!~@#]").length;
-                                console.log("lengthfield: " + lengthfield);
-
-                                var total = this_.getView().byId("total");
-                                var rec_count = 0;
-
-                                var len = 0;
-                                if (lengthfield === 9) {
-                                    for (var i = 1; i < result.split("[$@~!~@$]").length; i++) {
-                                        if (result.split("[$@~!~@$]")[i].length > 0) {
-
-                                            var rec = result.split("[$@~!~@$]")[i].split("[#@~!~@#]");
-                                            if (rec.length > 0) {
-                                                len = rec[0].trim().length + rec[1].trim().length + rec[2].trim().length + rec[3].trim().length + rec[4].trim().length + rec[
-                                                    5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length;
-                                                if (len > 0) {
-                                                    rec_count = rec_count + 1;
-                                                    result_final.push({
-                                                        'ID': i,
-                                                        'DATE': rec[0].trim(),
-                                                        'COUNTRY_CODE': rec[1].trim(),
-                                                        'COMPANY_CODE': rec[2].trim(),
-                                                        'TYPE': rec[3].trim(),
-                                                        'VALUE_DATE': rec[4].trim(),
-                                                        'AMOUNT': rec[5].trim().replace(/[,]/g, ""),
-                                                        'CURRENCY': rec[6].trim(),
-                                                        'COMMENTS': rec[7].trim().replace(/["'\n\r]/g, ""),
-                                                        'LOCK_FLAG': rec[8].trim(),
-                                                    });
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    if (result_final.length === 0) {
-                                        fU.setValue("");
-                                        MessageToast.show("There is no record to be uploaded");
-                                        this_.runNext();
-                                    } else if (result_final.length >= 2001) {
-                                        fU.setValue("");
-                                        MessageToast.show("Maximum records are 2000.");
-                                        this_.runNext();
-                                    } else {
-                                        // Bind the data to the Table
-                                        oModel = new JSONModel();
-                                        oModel.setSizeLimit("5000");
-                                        oModel.setData({
-                                            result_final: result_final
-                                        });
-                                        
-                                        var oModel1 = new sap.ui.model.json.JSONModel();
-                                        oModel1.setData({
-                                            fname: file.name,
-                                        });
-                                        console.log(oModel1);
-                                        var oHeaders =  {
-                                            "Authorization": "Basic XXXXXXXX",
-                                            "Content-Type": "application/x-www-form-urlencoded"
-                                        }
-
-                                        var oModel = new JSONModel();
-
-                                        console.log(result_final);
-                                        
-                                        oModel.loadData("processData.xsjs", JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
-
-                                        oModel.attachRequestCompleted(function() {
-                                            var result = oModel.getData();
-                                            console.log(result);
-
-                                            _result = result;
-
-                                            that._firePropertiesChanged();
-                                            this.settings = {};
-                                            this.settings.result = "";
-
-                                            that.dispatchEvent(new CustomEvent("onStart", {
-                                                detail: {
-                                                    settings: this.settings
-                                                }
-                                            }));
-
-                                            this_.runNext();
-
-                                        });
-                                    }
-                                    */
-                                        
-                                    that._firePropertiesChanged();
-                                    this.settings = {};
-                                    this.settings.result = "";
-                                    this_.runNext();
-                                    fU.setValue("");
-                                } else {
-                                    this_.runNext();
-                                    fU.setValue("");
-                                    MessageToast.show("Please upload the correct file");
-                                }
+                                that._firePropertiesChanged();
+                                this.settings = {};
+                                this.settings.result = "";
+                                this_.runNext();
+                                fU.setValue("");
                             } else {
                                 this_.runNext();
                                 console.log("Error: wrong Excel File template");
