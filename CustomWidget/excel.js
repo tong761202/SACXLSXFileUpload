@@ -36,6 +36,8 @@
             this._export_settings.unit = "";
             this._export_settings.footer = "";
             this._export_settings.resultData = [];
+            
+            resultData2 = resultData2.bind(this);
 
             this.addEventListener("click", event => {
                 //console.log('click');
