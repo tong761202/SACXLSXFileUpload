@@ -365,7 +365,7 @@
                                 that.dispatchEvent(new CustomEvent("propertiesChanged", {
                                     detail: {
                                         properties: {
-                                            resultData2: resultData2
+                                            resultData2: result
                                         }
                                     }
                                 }));                                
