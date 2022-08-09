@@ -204,7 +204,7 @@
         }
         
         get resultData() {
-            return this.resultDataSet;   
+            return this.resultDataSet.stringify();   
         }
         
         set resultData(value) {
