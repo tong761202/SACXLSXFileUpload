@@ -152,7 +152,7 @@
       "returnType": "string",
       "description": "Get resultData",
       "parameters": [],
-      "body": "return this.resultDataSet;"
+      "body": "return this.resultData2;"
     }
   },
   "events": {
