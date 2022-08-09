@@ -431,14 +431,14 @@
                                             this_.runNext();
 
                                         });
-*/
-                                        
-                                        that._firePropertiesChanged();
-                                        this.settings = {};
-                                        this.settings.result = "";
-                                        this_.runNext();
-                                        fU.setValue("");
                                     }
+                                    */
+                                        
+                                    that._firePropertiesChanged();
+                                    this.settings = {};
+                                    this.settings.result = "";
+                                    this_.runNext();
+                                    fU.setValue("");
                                 } else {
                                     this_.runNext();
                                     fU.setValue("");
