@@ -209,7 +209,6 @@
         }
         set resultData2(value) {
             console.log("resultData Set called!!");
-            _shadowRoot.getElementById("resultData2").value = value;
             this._export_settings.resultData2 = value;
         }         
         
@@ -362,6 +361,7 @@
 
                                 console.log(that._export_settings.resultData2);
                                 that.resultData2 = result;                               
+                                _shadowRoot.getElementById("resultData2").value = value;
                                 console.log(that._export_settings.resultData2);
                                 
                                 this_.runNext();
