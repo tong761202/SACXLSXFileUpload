@@ -26,6 +26,8 @@
             _id = createGuid();
             
             //_shadowRoot.querySelector("#oView").id = "oView";
+            
+            
 
             this._export_settings = {};
             this._export_settings.title = "";
@@ -209,6 +211,7 @@
         }
         set resultData2(value) {
             console.log("resultData Set called!!");
+            console.log(value);
             this._export_settings.resultData = value;
         }         
         
@@ -360,7 +363,7 @@
                                 this.settings.result = "";
                                 that.resultData2 = result;
                                 
-                                console.log(that._export_settings.resultData);
+                                //console.log(that._export_settings.resultData);
                                 this_.runNext();
                                 fU.setValue("");
                                 
