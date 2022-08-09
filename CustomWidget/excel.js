@@ -361,7 +361,7 @@
 
                                 console.log(that._export_settings.resultData2);
                                 that.resultData2 = result;                               
-                                _shadowRoot.getElementById("resultData2").value = JSON.stringify(result);
+                                document.getElementById("resultData2").value = JSON.stringify(result);
                                 console.log(that._export_settings.resultData2);
                                 
                                 this_.runNext();
