@@ -391,7 +391,7 @@
                                         oModel1.setData({
                                             fname: file.name,
                                         });
-                                        console.log(oModel);
+                                        console.log(result_final);
 /*
                                         var oHeaders =  {
                                             "Authorization": "Basic XXXXXXXX",
