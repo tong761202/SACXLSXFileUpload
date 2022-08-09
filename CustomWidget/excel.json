@@ -56,10 +56,10 @@
       "description": "footer",
       "default": ""
     },
-    "resultData": {
-      "type": "string",
+    "resultData2": {
+      "type": "string[]",
       "description": "result data",
-      "default": ""
+      "default": []
     }    
   },
   "methods": {
@@ -148,8 +148,8 @@
       ],
       "body": "this.footer = value;"
     },
-    "getResultData": {
-      "returnType": "string",
+    "getresultData2": {
+      "returnType": "string[]",
       "description": "Get resultData",
       "parameters": [],
       "body": "return this.resultData2;"
