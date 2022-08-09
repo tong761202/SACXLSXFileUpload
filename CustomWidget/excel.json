@@ -142,6 +142,12 @@
         }
       ],
       "body": "this.footer = value;"
+    },
+    "getResultData": {
+      "returnType": "string",
+      "description": "Get ResultData",
+      "parameters": [],
+      "body": "return this.resultData;"
     }
   },
   "events": {
