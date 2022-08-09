@@ -217,6 +217,7 @@
                 "icon",
                 "unit",
                 "footer",
+                "resultData",
                 "link"
             ];
         }
