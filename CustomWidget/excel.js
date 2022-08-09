@@ -192,7 +192,7 @@
         }
         set unit(value) {
             value = _result;
-            console.log("value: " + value);
+            //console.log("value: " + value);
             this._export_settings.unit = value;
         }
 
@@ -204,11 +204,11 @@
         }   
 
         get resultData2() {
-            console.log("resultData Get called!!");
+            //console.log("resultData Get called!!");
             return this._export_settings.resultData2;
         }
         set resultData2(value) {
-            console.log("resultData Set called!!");
+            //console.log("resultData Set called!!");
             this._export_settings.resultData2 = value;
         }         
         
@@ -359,7 +359,7 @@
                                 this.settings = {};
                                 this.settings.result = "";
 
-                                console.log(that._export_settings.resultData2);
+                                //console.log(that._export_settings.resultData2);
                                 that.resultData2 = result;                               
                                 
                                 that.dispatchEvent(new CustomEvent("propertiesChanged", {
