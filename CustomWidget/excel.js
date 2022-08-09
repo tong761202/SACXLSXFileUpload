@@ -33,10 +33,10 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
-            this._export_settings.resultData = [];
+            this.resultData = [];
 
             this.addEventListener("click", event => {
-                console.log('click');
+                //console.log('click');
 
             });
 
@@ -204,10 +204,10 @@
         }   
 
         get resultData() {
-            return this._export_settings.resultData;
+            return this.resultData;
         }
         set resultData(value) {
-            this._export_settings.resultData = value;
+            this.resultData = value;
         }         
         
         static get observedAttributes() {
