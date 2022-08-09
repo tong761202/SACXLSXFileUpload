@@ -204,6 +204,7 @@
         }   
 
         get resultData() {
+            console.log("resultData called!!");
             return this.resultData2;
         }
         set resultData(value) {
