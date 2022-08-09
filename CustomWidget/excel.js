@@ -209,6 +209,7 @@
         }
         set resultData2(value) {
             console.log("resultData Set called!!");
+            this._shadowRoot.getElementById("resultData2").value = value;
             this._export_settings.resultData2 = value;
         }         
         
