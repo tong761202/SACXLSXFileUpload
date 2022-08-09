@@ -33,7 +33,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
-            this._export_settings.resultData = "";
+            this._export_settings.resultData = [];
 
             this.addEventListener("click", event => {
                 console.log('click');
@@ -355,8 +355,8 @@
                             if (correctsheet) {
                                 that._firePropertiesChanged();
                                 this.settings = {};
-                                this.settings.result = JSON.stringify(result);
-                                that._export_settings.resultData = JSON.stringify(result);
+                                this.settings.result = result;
+                                that._export_settings.resultData = result;
                                 console.log(that._export_settings.resultData);
                                 this_.runNext();
                                 fU.setValue("");
