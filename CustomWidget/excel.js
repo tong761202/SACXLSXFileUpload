@@ -33,7 +33,7 @@
             this._export_settings.icon = "";
             this._export_settings.unit = "";
             this._export_settings.footer = "";
-            this.resultData2 = [];
+            this.resultData = [];
 
             this.addEventListener("click", event => {
                 //console.log('click');
@@ -203,13 +203,13 @@
             this._export_settings.footer = value;
         }   
 
-        get resultData() {
+        get resultData2() {
             console.log("resultData Get called!!");
-            return this.resultData2;
+            return this.resultData;
         }
-        set resultData(value) {
+        set resultData2(value) {
             console.log("resultData Set called!!");
-            this.resultData2 = value;
+            this.resultData = value;
         }         
         
         static get observedAttributes() {
@@ -359,9 +359,9 @@
                                 that._firePropertiesChanged();
                                 this.settings = {};
                                 this.settings.result = result;
-                                that.resultData = result;
+                                that.resultData2 = result;
                                 
-                                console.log(that.resultData2);
+                                console.log(that.resultData);
                                 this_.runNext();
                                 fU.setValue("");
                                 
