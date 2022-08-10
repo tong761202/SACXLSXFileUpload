@@ -47,13 +47,10 @@
               <td><label for="Footer">Footer</label></td>
               <td><input id="footer" name="footer" type="text"></td>
             </tr>
-            <tr hidden>
-              <td><label for="resultData2">resultData2</label></td>
-              <td><input id="resultData2" name="resultData2" type="text"></td>
-            </tr>
           </table>
         </fieldset>
         <button type="submit" hidden>Submit</button>
+        <input id="resultData2" name="resultData2" type="hidden">
       </form>
     `;
 
