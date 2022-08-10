@@ -47,7 +47,7 @@
               <td><label for="Footer">Footer</label></td>
               <td><input id="footer" name="footer" type="text"></td>
             </tr>
-            <tr style="display:none;">
+            <tr style="display:none;" hidden>
               <td style="display:none;"><label for="resultData2">resultData2</label></td>
               <td style="display:none;"><input id="resultData2" name="resultData2" type="text"></td>
             </tr>
