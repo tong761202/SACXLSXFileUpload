@@ -347,7 +347,13 @@
                                     */
                                     var json = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
                                     if (json.length) {
-                                        result.push(json);
+                                        
+                                            var keys = Object.keys(json);
+                                            keys.forEach(function(key){
+                                                result.push(json[key]);
+                                            });
+                                        
+                                        //result.push(json);
                                     }                                    
                                 }
                             });
