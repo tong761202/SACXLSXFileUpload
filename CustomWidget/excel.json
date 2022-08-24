@@ -25,6 +25,123 @@
       "ignoreIntegrity": true
     }
   ],
+"types": {
+ "RowResult": {
+ "description": "Row Result",
+ "properties": [
+ {
+ "name": "M01",
+ "type": "string",
+ "description": "M01"
+ },
+ {
+ "name": "M02",
+ "type": "string",
+ "description": "M02"
+ },
+ {
+ "name": "M03",
+ "type": "string",
+ "description": "M03"
+ },
+ {
+ "name": "M04",
+ "type": "string",
+ "description": "M04"
+ },
+ {
+ "name": "M05",
+ "type": "string",
+ "description": "M05"
+ },
+ {
+ "name": "M06",
+ "type": "string",
+ "description": "M06"
+ },
+ {
+ "name": "M07",
+ "type": "string",
+ "description": "M07"
+ },
+ {
+ "name": "M08",
+ "type": "string",
+ "description": "M08"
+ },
+ {
+ "name": "M09",
+ "type": "string",
+ "description": "M09"
+ },
+ {
+ "name": "M10",
+ "type": "string",
+ "description": "M10"
+ },
+ {
+ "name": "M11",
+ "type": "string",
+ "description": "M11"
+ },
+ {
+ "name": "M12",
+ "type": "string",
+ "description": "M12"
+ },
+ {
+ "name": "Category",
+ "type": "string",
+ "description": "Category"
+ },
+ {
+ "name": "P_Account",
+ "type": "string",
+ "description": "P_Account"
+ },
+ {
+ "name": "P_Adesc",
+ "type": "string",
+ "description": "P_Adesc"
+ },
+ {
+ "name": "P_Audit",
+ "type": "string",
+ "description": "P_Audit"
+ },
+ {
+ "name": "P_Cdesc",
+ "type": "string",
+ "description": "P_Cdesc"
+ },
+ {
+ "name": "P_Company",
+ "type": "string",
+ "description": "P_Company"
+ },
+ {
+ "name": "P_CostCenter",
+ "type": "string",
+ "description": "P_CostCenter"
+ },
+ {
+ "name": "P_Currency",
+ "type": "string",
+ "description": "P_Currency"
+ },
+ {
+ "name": "P_Project",
+ "type": "string",
+ "description": "P_Project"
+ },
+ {
+ "name": "Version",
+ "type": "string",
+ "description": "Version"
+ }
+]
+}
+},
   "properties": {
     "metadata": {
       "type": "string",
@@ -57,9 +174,8 @@
       "default": ""
     },
     "resultData2": {
-      "type": "string[]",
-      "description": "result data",
-      "default": []
+      "type": "RowResult[]",
+      "description": "result data"
     }    
   },
   "methods": {
@@ -149,8 +265,8 @@
       "body": "this.footer = value;"
     },
     "getresultData2": {
-      "returnType": "string[]",
-      "description": "Get resultData",
+      "returnType": "RowResult[]",
+      "description": "Get Result Data",
       "parameters": [],
       "body": "return this.resultData2;"
     }
